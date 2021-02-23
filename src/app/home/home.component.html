@@ -1,0 +1,185 @@
+
+        
+        <div class="spak-carousel">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active" (click)="getCurrenCarouselItem($event)"></li>
+                    <li data-target="#myCarousel" data-slide-to="1" (click)="getCurrenCarouselItem($event)"></li>                    
+                </ol>
+        
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+        
+                    <div class="item active">
+                        <img src="./assets/images/carousel/1.png" alt="we are spak" class="full-img" />                        
+                        <div class="spak-caption">we are spak</div>
+                    </div> 
+
+                    <div class="item">
+                        <img src="./assets/images/carousel/2.png" alt="we love design" class="full-img" />                        
+                        <div class="spak-caption red-grey-caption">we love design</div>
+                    </div> 
+
+                </div>
+            
+            </div>
+
+        </div>
+
+        
+            <div class="section reduce-section-padding-bottom-15">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <figure class="img-dotted-bg">
+                                <img src="./assets/images/about_1.jpg" alt="Image" class="img-fluid img-thumbnail">
+                            </figure>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <img src="./assets/images/about_2.jpg" alt="Image" class="img-fluid mb-5">
+                            <span class="d-block text-uppercase text-primary">About US</span>
+                            <h2 class="mb-4 section-title">We are a branding, design & digital creative agency.</h2>                    
+                            <p>
+                               <i>
+                                   From our design studio in the city of Mumbai, we consistently deliver the exceptionally high quality of work for which we are becoming renowned.
+                               </i>
+                            </p>
+                            <p>
+                                <i>
+                                    Our team’s individual talents align to offer a comprehensive array of commercially focussed creativity.
+                                </i>
+                            </p>
+                            <p><a [routerLink]="'/about'" class="btn btn-outline-black">Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section portfolio-section reduce-section-padding-15">
+                <div class="container"> 
+                    <div class="row justify-content-center" data-aos="fade-up">
+                        <div class="col-md-8 text-center">
+                            <h2 class="section-title">Selected Work</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-6 aos-init aos-animate" data-aos="fade" data-aos-delay="200">
+                            <a [routerLink]="'/sohum-step-out-campaign'" class="work-thumb">
+                                <div class="work-text">
+                                    <h2>Sohum Marketing Campaigns</h2>
+                                    <p>Sohum</p>
+                                </div>
+                                <img src="./assets/images/sohum/logo.png" alt="Sohum Shoppe Logo" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 aos-init aos-animate" data-aos="fade" data-aos-delay="300">
+                            <a [routerLink]="'/hamleys-come-and-play-campaign'" class="work-thumb">
+                                <div class="work-text">
+                                    <h2>Hamleys Marketing Campaigns</h2>
+                                    <p>Hamleys</p>
+                                </div>
+                                <img src="./assets/images/hamleys/logo.png" alt="Image" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <p class="text-center"><a [routerLink]="'/work'" class="btn btn-outline-black">View More</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="section bg-light block-11">
+                <div class="container">
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-md-8 text-center">
+                            <h2 class="mb-4 section-title">Happy Client</h2>
+                        </div>
+                    </div>
+                    <div class="nonloop-block-11 owl-carousel">
+                        <div class="item">
+                            <div class="block-33 h-100">
+                                <div class="vcard d-flex mb-3">
+                                    <div class="image align-self-center"><img src="./assets/images/testimonials/hemant.png" alt="Hemnat Shetty" /></div>
+                                    <div class="name-text align-self-center">
+                                        <h2 class="heading">Hemant Shetty</h2>
+                                        <span class="meta">Brand Head – Pradaxa, Boehringer Ingelheim</span>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <blockquote>
+                                        <p>&rdquo; Working with Spak has always been great. The team at Spak has been supportive and very strong in how they execute their concepts. Once you engage with them, it becomes difficult to associate with anyone else! All the best to the Spak team! &ldquo;</p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="block-33 h-100">
+                                <div class="vcard d-flex mb-3">
+                                    <div class="image align-self-center"><img src="./assets/images/testimonials/jay.png" alt="Jay Shah" /></div>
+                                    <div class="name-text align-self-center">
+                                        <h2 class="heading">Jay Shah</h2>
+                                        <span class="meta">Director Sales & Marketing – Esenpro</span>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <blockquote>
+                                        <p>&rdquo; It was 2011, when I had first decided to do the re-branding of my Dad’s business. When I met Mr Shiv from Spak, he was full of ideas and the entire team executed the branding process with ease!
+        Till date, we have been working Spak only! Good Luck!
+        &ldquo;</p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="block-33 h-100">
+                                <div class="vcard d-flex mb-3">
+                                    <div class="image align-self-center"><img src="./assets/images/testimonials/prithwish.png" alt="Prithwish Banerji" /></div>
+                                    <div class="name-text align-self-center">
+                                        <h2 class="heading">Prithwish Banerji</h2>
+                                        <span class="meta"> General Manager – GSK Consumer Healthcare</span>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <blockquote>
+                                        <p>&rdquo; Spak from day 1 had always been brilliant in conceptualizing and executing their plans! The team always supported irrexpective of the work hours. What makes them stand out is the way they turn around with their thoughts and executions! Best of luck! &ldquo;</p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="block-33 h-100">
+                                <div class="vcard d-flex mb-3">
+                                    <div class="image align-self-center"><img src="./assets/images/testimonials/dharmesh.png" alt="Dharmesh Patel" /></div>
+                                    <div class="name-text align-self-center">
+                                        <h2 class="heading">Dharmesh Patel</h2>
+                                        <span class="meta">CustomerPartner – Options Fashion</span>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <blockquote>
+                                        <p>&rdquo; Spak has been quite vocal in the way they approach the concepts, thoughts and how they execute them. They have a brilliant and strong to support their clients! They study their clients and the competition and then execute their ideas! Kudos to the entire Spak Team! &ldquo;</p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="bg-primary py-5">
+                <div class="container text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3"></div>
+                        <div class="col-lg-6">
+                            <h3 class="text-white mb-2 font-weight-normal">Get Started</h3>
+                            <p class="text-white mb-4">Spakcomm’s services are many. Whether you are looking for us to be your complete outsourced design partners or support you with the creative and digital activation of your marketing plans we are always ready.</p>
+                            <p class="mb-0" data-aos="fade-up" data-aos-delay="200">
+                                <a [routerLink]="'/contact'" class="btn btn-outline-white px-4 py-3">Get In Touch!</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            

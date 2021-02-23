@@ -1,0 +1,16 @@
+.form-control {
+    font-size: 16px;
+}
+
+.contact-btn {
+    background-color: transparent;
+    color: #009eda;
+    border: 1px solid #009eda;
+}
+
+.contact-btn:hover, 
+.contact-btn:focus
+{
+    background-color: #009eda;
+    color: #fff;
+}

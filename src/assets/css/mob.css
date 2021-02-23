@@ -1,0 +1,130 @@
+@media only screen and (max-width: 600px) {
+  
+    .mb-5, .my-5 {
+        margin-bottom: 0rem !important;
+    }
+
+    .site-footer {
+        padding: 2em 0 2rem 0;
+
+    }
+
+    .site-footer .footer-link li {
+        display: inline-block;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .work-thumb:hover .vertical-line {
+        height: 85%;
+        visibility: visible;
+    }
+
+    .custom-slide-item, .custom-slide-text {
+        margin-top: 63px;
+    }
+
+    .slider-item .slider-text h1 {
+        position: relative;
+        bottom: 18px;
+        font-size: 24px !important;
+    }
+
+    header .navbar-brand > img {
+        max-width: 50%;
+        height: auto;
+    }
+
+    .section {
+        padding: 2em 0;
+    }
+
+    .navbar-toggler {
+        margin-top: 10px !important;
+        top: 0 !important;
+    }
+
+    .custom-slide-item, .custom-slide-text {
+        margin-top: 0;
+    }
+
+    .slider-item .slider-text h1 {
+        position: relative;
+        bottom: 0;
+        font-size: 10px !important;
+    }
+
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .spak-caption {
+        font-size: 22px;
+    }
+
+    .carousel-indicators li:first-child {
+        margin-right: 7px;
+    }
+
+    .carousel-indicators li:last-child {
+        margin-left: 7px;
+    }
+
+    .navbar-collapse {
+        border-top: 3px solid gray;
+        margin-top: 45px !important;
+    }
+
+    .navbar-brand {
+        bottom: 0 !important;
+        padding-left: 5px;
+    }
+
+    .slider-item .slider-text h1 {
+        font-size: 25px !important;
+    }
+
+    .navbar-nav> li {
+        border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    }
+
+    .navbar-nav > li:last-child {
+        border-bottom: 0px solid rgba(128, 128, 128, 0.5);
+    } 
+
+    .mob-m-t-15 {
+        margin-top: 15px;
+    }
+
+    .nav-link {
+        padding-left: 0;
+    } 
+
+    .footer-social li {
+        margin-bottom: 0;
+    }
+
+    .section-title {
+        font-weight: normal;
+        font-size: 20px !important;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .slider-item .slider-text h1 {
+        font-size: 20px !important;
+        font-weight: normal !important;
+    }
+
+    .contact-form-contact-info {
+        margin-top: 15px;
+    }
+
+    .contact-form-contact-info p {
+        margin-bottom: 0px;
+        font-size: 16px;
+    }
+}

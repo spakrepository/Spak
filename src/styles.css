@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+.navbar-brand {
+    display: block;
+    position: relative;
+    bottom: 6px;
+}
+
+.highlightlink > li > a {
+    color: #ffffff !important;
+}
+
+.full-img {
+    width: 100%;
+    height: auto !important;
+}
+

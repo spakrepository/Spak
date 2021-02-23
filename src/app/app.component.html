@@ -1,0 +1,86 @@
+<header role="banner">
+
+  <nav class="navbar navbar-expand-lg  bg-dark">
+    <div class="container-fluid">
+
+     
+      <a class="navbar-brand" [routerLink]="'/home'" (click)="changeLinkColor('unique')">
+        <img [src]="logo" alt="Spak Brand Marketing Company Mumbai Logo" title="Spak Brand Marketing Company Mumbai Logo" class="img-responsive" />
+      </a>
+      <button class="navbar-toggler" type="button" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMenu()">
+        <span class="navbar-toggler-icon"></span>                           
+        <span class="navbar-toggler-icon"></span>   
+        <span class="navbar-toggler-icon"></span>  
+      </button>
+
+      <div class="collapse navbar-collapse" *ngIf="HideShowMenu">
+        <ul [class]="setLinkColor">
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="'/about'" (click)="changeLinkColor('samelink'); closeMobMenu()">About</a>
+            <div class="nav-hovered"></div>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link" [routerLink]="'/service'" (click)="changeLinkColor('samelink'); closeMobMenu()">Services</a>
+              <div class="nav-hovered"></div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="'/work'" (click)="changeLinkColor('samelink'); closeMobMenu()">Work</a>
+            <div class="nav-hovered"></div>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" [routerLink]="'/contact'" (click)="changeLinkColor('samelink'); closeMobMenu()">Contact</a>
+              <div class="nav-hovered"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+<router-outlet></router-outlet>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+      <div class="row mb-5">
+          <div class="col-md-4 mb-5">
+              <h3 [class.mb-4]="footerHeadingClass">About Us</h3>
+              <p>
+                  We are a branding, design & digital creative agency. We bring newbrands to life & breathe new life into existing ones.
+              </p>
+              <a [routerLink]="'/about'">More...</a>
+          </div>
+          <div class="col-md-3 ml-auto">
+              <h3 [class.mb-4]="footerHeadingClass" class="mob-m-t-15">Navigation </h3>
+              <ul class="list-unstyled footer-link">
+                  <li><a class="nav-link" [routerLink]="'/about'">About</a></li>
+                  <li> <a class="nav-link" [routerLink]="'/service'">Services</a></li>
+                  <li><a class="nav-link" [routerLink]="'work'">Work</a></li>
+                  <li><a class="nav-link" [routerLink]="'contact'">Contact</a></li>
+              </ul>
+          </div>
+          <div class="col-md-3 mb-5">
+              <ul class="list-unstyled footer-link d-flex footer-social">
+                  <li><a href="https://twitter.com/spakcomm" class="p-2" target="_blank"><span
+                              class="fa fa-twitter"></span></a></li>
+                  <li><a href="https://www.facebook.com/spakcomm/" class="p-2" target="_blank"><span
+                              class="fa fa-facebook"></span></a></li>
+                  <li><a href="https://www.linkedin.com/company/spakcomm" class="p-2" target="_blank"><span
+                              class="fa fa-linkedin"></span></a></li>
+                  <li><a href="https://www.instagram.com/spakcomm/" class="p-2" target="_blank"><span
+                              class="fa fa-instagram"></span></a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-12 text-md-center text-left">            
+              <p [class.text-left]="isCenterCopyWrite">                
+                  Copyright &copy;
+                  <script type="66599eb47a35e851faede959-text/javascript">
+                  document.write(new Date().getFullYear());
+                  </script> &nbsp; <a href="http://spakcomm.com/">Spakcomm</a>. All rights reserved.
+              </p>
+          </div>
+      </div>
+  </div>
+</footer>
